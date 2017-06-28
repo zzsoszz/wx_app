@@ -1,0 +1,79 @@
+<view>
+    <video style="width:100%" src="{{videos[0].videoLowUrl}}"></video>
+   <!--
+    http://200006916.vod.myqcloud.com/200006916_3bdb5006266111e68d04f780259f0928.f10.mp4
+    -->
+    <view style="padding:20rpx;">
+        <!--<text>
+          {{videos[0].videoLowUrl}}
+        </text>-->
+         <view class="h1" style="font-weight:700;">
+            {{classTitle}}
+         </view>
+         <view class="h4" style="color:#666666;margin-top:20rpx;">
+            <view  style="display:inline">{{teacherName}}</view>
+            <view  style="display:inline;margin-left:20rpx;">{{teacherDes}}</view>
+         </view>
+         <!--
+         <view class="h6" style="display:flex;margin-top:20rpx;color:#999999;height:50rpx;align-items:center;" >
+            <view>{{tagName}}</view>
+            <view class="vline"></view>
+            <view>{{viewCount}}</view>
+            <view>播放</view>
+         </view>
+        -->
+         <view style="display:flex;align-items:center;justify-content:space-between;">
+            <view class="h6" style="margin-top:20rpx;color:#999999;height:50rpx;display:flex;align-items:center;" >
+                <view>{{tagName}}</view>
+                <view class="vline"></view>
+                <view>{{viewCount}}</view>
+                <view>播放</view>
+            </view>
+            <!--
+            <view>
+                <image style="width:50rpx;height:50rpx;" src="/images/icon.png"></image>
+                <image style="width:50rpx;height:50rpx;" src="/images/icon.png"></image>
+            </view>
+            -->
+         </view>
+    </view>
+    <view style="padding:20rpx;">
+        <view class="h4 hline" style="padding:20rpx 0;font-weight:700;">
+                选集
+        </view>
+        <view class="item" style="padding:0 20rpx 20rpx 20rpx;font-weight:700;display:flex" wx:for="{{videos}}" wx:for-index="idx" wx:for-item="item" >
+                <image style="width:240rpx;max-height:135rpx;flex:none;" src="http://bossappnew.oss-cn-hangzhou.aliyuncs.com/{{item.videoCover}}"></image>
+                <view style="padding-left:20rpx;">
+                    <view class="h3">
+                        {{item.videoName}}
+                    </view>
+                    <view style="display:flex;align-items:center;margin-top:20rpx;">
+                        <image style="width:25rpx;height:25rpx;margin-right:10rpx;" src="/images/time@2x.png"></image>
+                        <view class="tag">
+                            {{item.videoLength}}分钟
+                        </view>
+                    </view>
+                </view> 
+        </view>
+        <!--
+        <view class="item" style="padding:0 20rpx 20rpx 20rpx;font-weight:700;display:flex">
+                <image style="width:240rpx;max-height:135rpx;flex:none;" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"></image>
+                <view style="padding-left:20rpx;">
+                    <view class="h3">
+                        产品论的逻辑
+                    </view>
+                    <view style="display:flex;align-items:center;margin-top:10rpx;">
+                        <image style="width:25rpx;height:25rpx;" src="/images/icon.png"></image>
+                        <view class="tag">
+                            18分钟
+                        </view>
+                    </view>
+                </view> 
+        </view>
+        -->
+        <!--<view class="h4" style="padding:20rpx;text-align:center;font-weight:700;color:#999999;">
+                展开全部
+        </view>-->
+        
+    </view>
+</view>

@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container" style="background:#ffffff">
+  <!--
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  -->
+
+  <view style="padding:20rpx;">
+    <view style="position:fixed;right:20rpx;top:20rpx;" bindtap="makeCall" >
+        <image src="/images/contanct.png" style="width:120rpx;height:120rpx;"></image>
+    </view>
+    <form bindsubmit="formBindsubmit" 
+    style="display:block;margin-top:100rpx;padding:50rpx;" bindreset="formReset">
+      <view class="section" style="margin-top:30px;text-align:center;color:red">
+        {{tip}}
+      </view>
+      <view class="section" style="margin-top:20rpx;display:flex;padding:20rpx 0;align-items:center;">
+        <view class="section__title">联系方式</view>
+        <input name="phone" style="padding:0 20rpx;"   value="{{phone}}"  placeholder-class="inputplaceholder" placeholder="11位手机号码"/>
+      </view>
+      <view class="hline">
+      </view>
+      <view class="section"  style="display:flex;padding:20rpx 0;align-items:center;">
+        <view class="section__title">您的称呼</view>
+        <input name="username" style="padding:0 20rpx;" value="{{username}}"  placeholder-class="inputplaceholder"  placeholder="最多6位姓名"/>
+      </view>
+      <view class="hline">
+      </view>
+      <view class="section" style="margin-top:30px;display:flex;align-items:top;">
+          <image src="/images/warning.png" style="width:30rpx;height:30rpx;"></image>
+          <span class="h6" style="margin-left:10rpx;color:#999999;">
+            姓名和联系方式必填，客服会在5个工作日与您取得联系
+          </span>
+      </view>
+      <view style="display:flex;margin-top:30px;">
+        <button class="actionbtn"  formType="submit" >提交报名</button>
+      </view>
+    </form>
+  </view>
+
+
+</view>

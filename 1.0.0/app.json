@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/signup/signup",
+    "pages/slider/slider",
+    "pages/course/item/item",
+    "pages/schedules/list/list",
+    "pages/schedules/item/item"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "color":"000000",
+        "selectedColor":"#4fb7e2",
+        "pagePath": "pages/index/index",
+        "iconPath":"images/home2x.png",
+        "selectedIconPath":"images/home-active@2x.png",
+        "text": "首页"
+      },
+      {
+        "color":"#000000",
+        "selectedColor":"#4fb7e2",
+        "pagePath": "pages/schedules/list/list",
+        "iconPath":"images/schedule@2x.png",
+        "selectedIconPath":"images/schedule-active@2x.png",
+        "text": "课程"
+      },
+       {
+        "color":"#000000",
+        "selectedColor":"#4fb7e2",
+        "pagePath": "pages/signup/signup",
+        "iconPath":"images/signup@2x.png",
+        "selectedIconPath":"images/signup-active@2x.png",
+        "text": "报名"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

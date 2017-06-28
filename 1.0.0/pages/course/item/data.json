@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "正常",
+  "data": {
+    "id": 1,
+    "classTitle": "测试视频",
+    "classSubTitle": "测试视频",
+    "classLength": 111,
+    "classTag": 1,
+    "viewCount": 0,
+    "teacherId": 1,
+    "orderNum": 0,
+    "classCover": "还没有图片",
+    "classType": 1,
+    "classTypeId": 1,
+    "tagName": "Boss商学院",
+    "teacherName": "房西苑",
+    "teacherDes": "这是个好老师",
+    "videos": [
+      {
+        "id": 1,
+        "videoName": "房西苑-资本运营第一课思维的转轨-第一节-资本的思维（一）",
+        "videoCover": "封面还没有弄",
+        "createTime": 1484123429000,
+        "videoTencentId": "14651978969511275192",
+        "videoHighUrl": "http://200006916.vod.myqcloud.com/200006916_022ea3bcd7cd11e6bde4db5b989d480a.f0.mp4",
+        "videoMiddleUrl": "http://200006916.vod.myqcloud.com/200006916_022ea3bcd7cd11e6bde4db5b989d480a.f10.mp4",
+        "videoLowUrl": "http://200006916.vod.myqcloud.com/200006916_022ea3bcd7cd11e6bde4db5b989d480a.f20.mp4",
+        "videoLength": 200
+      }
+      ,
+      {
+        "id": 2,
+        "videoName": "房西苑-资本运营第一课思维的转轨-第四节-资本的思维",
+        "videoCover": "封面还没有弄",
+        "createTime": 1484123500000,
+        "videoTencentId": "14651978969511275167",
+        "videoHighUrl": "http://200006916.vod.myqcloud.com/200006916_d872b108d7cc11e6a93519af8e641b73.f0.mp4",
+        "videoMiddleUrl": "http://200006916.vod.myqcloud.com/200006916_d872b108d7cc11e6a93519af8e641b73.f10.mp4",
+        "videoLowUrl": "http://200006916.vod.myqcloud.com/200006916_d872b108d7cc11e6a93519af8e641b73.f20.mp4",
+        "videoLength": 234
+      }
+    ],
+    "richHtml": null
+  }
+}
